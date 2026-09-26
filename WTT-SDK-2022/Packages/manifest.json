@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "ca.bushtail.tarkov-asset-bundle-dumper": "https://github.com/bushtail/TarkovAssetDumper.git#v1.0.1",
     "com.bmpq.assetbundlebrowser-imposter": "https://github.com/bmpq/AssetBundles-Browser-Imposter.git",
     "com.unity.collab-proxy": "2.11.2",
     "com.unity.feature.development": "1.0.1",

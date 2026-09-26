@@ -1,5 +1,15 @@
 {
   "dependencies": {
+    "ca.bushtail.tarkov-asset-bundle-dumper": {
+      "version": "https://github.com/bushtail/TarkovAssetDumper.git#v1.0.1",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.scriptablebuildpipeline": "2.1.5",
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "hash": "d5fdcad35303df73f8ef29c8ecdc2127310dda0f"
+    },
     "com.bmpq.assetbundlebrowser-imposter": {
       "version": "https://github.com/bmpq/AssetBundles-Browser-Imposter.git",
       "depth": 0,
