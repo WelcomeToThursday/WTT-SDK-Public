@@ -33,17 +33,14 @@ namespace AnimationEventSystem
 
 		// Token: 0x04005808 RID: 22536
 		public List<EventCondition> EventConditions;
-#if UNITY_EDITOR				
+#if UNITY_EDITOR
 		public void UpdateHash()
         {
             // Change the Hash depending on the name
             // also change param type if the name supports it
-            // Not Included; PutMagToRig, MessageName, ReplaceSecondMag, ShowAmmo, ShowMag, SliderOut, SoundAtPoint
-            // UseSecondMagForReload, OnCurrentAnimStateEnded, OnSetActiveObject, OnDeactivateObject
-            // As they aren't used by BSG as of now
 
-            switch (_functionName) 
-			{				
+            switch (_functionName)
+			{
                 case "AddAmmoInChamber":
                     _functionNameHash = -508605542;
                     break;
@@ -98,6 +95,9 @@ namespace AnimationEventSystem
                 case "MagShow":
                     _functionNameHash = 1551431816;
                     break;
+                case "MessageName":
+                    _functionNameHash = 1724675694;
+                    break;
                 case "MalfunctionOff":
                     _functionNameHash = 1041383721;
                     break;
@@ -110,11 +110,29 @@ namespace AnimationEventSystem
                 case "OnBoltCatch":
                     _functionNameHash = -1518700811;
                     break;
+                case "PutMagToRig":
+                    _functionNameHash = 2146162989;
+                    break;
                 case "RemoveShell":
                     _functionNameHash = 211630556;
                     break;
+                case "ReplaceSecondMag":
+                    _functionNameHash = 443236115;
+                    break;
                 case "ShellEject":
                     _functionNameHash = -1819682913;
+                    break;
+                case "ShowAmmo":
+                    _functionNameHash = -1662010579;
+                    break;
+                case "ShowMag":
+                    _functionNameHash = 903577754;
+                    break;
+                case "SliderOut":
+                    _functionNameHash = -1349190221;
+                    break;
+                case "SoundAtPoint":
+                    _functionNameHash = -833254918;
                     break;
                 case "StartUtilityOperation":
                     _functionNameHash = 1134400241;
@@ -127,6 +145,9 @@ namespace AnimationEventSystem
                     _functionNameHash = -1376281788;
                     Parameter.ParamType = (EAnimationEventParamType)4;
                     break;
+                case "UseSecondMagForReload":
+                    _functionNameHash = 67499002;
+                    break;
                 case "WeapIn":
                     _functionNameHash = -224219248;
                     break;
@@ -137,14 +158,29 @@ namespace AnimationEventSystem
                     _functionNameHash = 1554795451;
                     Parameter.ParamType = (EAnimationEventParamType)3;
                     break;
+                case "OnCurrentAnimStateEnded":
+                    _functionNameHash = 1051598138;
+                    break;
+                case "OnSetActiveObject":
+                    _functionNameHash = 1350263048;
+                    break;
+                case "OnDeactivateObject":
+                    _functionNameHash = 1537525950;
+                    break;
                 case "OnBackpackDrop":
-                    _functionNameHash = 224242560;                    
+                    _functionNameHash = 224242560;
                     break;
                 case "BipodOpen":
-                    _functionNameHash = 1527071002;                    
+                    _functionNameHash = 1527071002;
                     break;
                 case "BipodClose":
-                    _functionNameHash = -378724418;                    
+                    _functionNameHash = -378724418;
+                    break;
+                case "MisfireOff":
+                    _functionNameHash = 1225921510;
+                    break;
+                case "JamOff":
+                    _functionNameHash = -471759195;
                     break;
                 default:
 					_functionNameHash = 0;
